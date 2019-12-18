@@ -35,10 +35,10 @@ resetArray()
   let  array= this.state.array;
     const bar= document.getElementsByClassName('arr');
             for(let i=0;i<array.length;i++)
-            {   await this.pause(150);
+            {   await this.pause(100);
               for(let j=0;j<array.length-i-1;j++)
                { 
-                await this.pause(150);
+                await this.pause(100);
                 
                   if(array[j]>array[j+1])
                    {  
@@ -61,7 +61,7 @@ resetArray()
               {
                   bar[array.length-i-1].style.backgroundColor ="#0f3b11";
               }
-            },150)
+            },100)
              
               this.setState({
                 array:array,
